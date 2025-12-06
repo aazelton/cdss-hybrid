@@ -1,0 +1,18 @@
+# Environment variables
+.env
+.env.local
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# ChromaDB cache
+cache/
+
+# Logs
+*.log
+
+# API Keys
+*_api_key*
+secrets/
