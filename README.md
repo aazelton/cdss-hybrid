@@ -1,7 +1,7 @@
 # CDSS Hybrid - Clinical Decision Support System
 ### AI-Powered Medical Protocol Assistant for Austere Environments
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Status: Research](https://img.shields.io/badge/status-research%20proof%20of%20concept-orange.svg)]()
 
@@ -24,7 +24,7 @@ CDSS Hybrid is an open-source clinical decision support system demonstrating AI-
 - 📴 Offline capable
 - 🔄 Protocol-agnostic (use any PDFs)
 - 🤖 AI-powered (OpenAI GPT-4 or any LLM API)
-- 🔓 Fully open source (MIT License)
+- 🔓 Fully open source (CC BY-NC 4.0 License)
 
 ## Quick Start
 
@@ -32,6 +32,6 @@ See full documentation in the repository.
 
 ## License
 
-MIT License - See LICENSE file.
+CC BY-NC 4.0 License - See LICENSE file.
 
 **Research tool only. Always consult qualified healthcare professionals for patient care.**
