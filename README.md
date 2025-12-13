@@ -70,7 +70,7 @@ python scripts/ingest_pdfs.py
 python app/main.py
 ```
 
-See **[QUICKSTART.md](QUICKSTART.md)** for detailed deployment guide.
+> **Note:** Detailed deployment guide coming soon.
 
 ---
 
@@ -125,10 +125,10 @@ AI-generated medical guidance with source citations from your protocol database.
 
 ## Documentation
 
-- **[QUICKSTART.md](QUICKSTART.md)** - Deploy in 30 minutes
-- **[HARDWARE_SETUP.md](HARDWARE_SETUP.md)** - Complete hardware guide
-- **[API Documentation](#)** - REST API reference
-- **[Contributing Guidelines](#)** - How to contribute
+- **Quick Start** - See installation section above
+- **Hardware Setup** - See deployment options below
+- **API Documentation** - REST API reference (coming soon)
+- **Contributing** - See contributing section below
 
 ---
 
@@ -149,7 +149,7 @@ Access via web browser or API
 ### Cloud + Raspberry Pi ($50-100 one-time + $30-50/month)
 Voice-activated field device with offline capability
 
-See **[HARDWARE_SETUP.md](HARDWARE_SETUP.md)** for complete equipment guide.
+> **Note:** Complete hardware setup guide coming soon. For now, you'll need a Raspberry Pi with microphone input and network connectivity to your cloud VM.
 
 ---
 
@@ -186,11 +186,13 @@ We welcome contributions! This project benefits the medical and research communi
 
 ### How to Contribute
 1. Fork the repository
-2. Create feature branch
-3. Make changes
-4. Submit pull request
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
 
-See [CONTRIBUTING.md](#) for guidelines.
+We welcome contributions! Please ensure your code follows the project's style and includes appropriate tests.
 
 ---
 
