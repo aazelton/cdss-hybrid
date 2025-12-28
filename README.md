@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # CDSS Voice Client - Clinical Decision Support System
 
 Voice-activated medical decision support system for austere environments. Uses Raspberry Pi 3 edge device with cloud-based AI processing.
