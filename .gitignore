@@ -18,6 +18,17 @@ __pycache__/
 *.wav
 *.mp3
 
+.env.local
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# ChromaDB cache
+cache/
+>>>>>>> 3c1a495caeaede076de1a5e4fc36e70dc629bfde
+
 # Logs
 *.log
 
@@ -30,3 +41,8 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# API Keys
+*_api_key*
+secrets/
+
