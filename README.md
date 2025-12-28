@@ -18,7 +18,63 @@ Voice-activated medical decision support system for austere environments. Uses R
 - **USB Microphone** (tested with Audio-Technica iTalk-02)
 - **Speakers or HDMI audio output**
 - **Internet connection** (WiFi or Ethernet)
+## 🎧 Bluetooth Headset Support
 
+The system supports Bluetooth headsets with both microphone and speaker capabilities for hands-free operation in field environments.
+
+### Bluetooth Requirements
+
+**Supported Profiles:**
+- A2DP (Advanced Audio Distribution Profile) - for high-quality audio playback
+- HSP/HFP (Headset/Hands-Free Profile) - for microphone input
+
+**Tested Devices:**
+- ✅ Shokz OpenRun Pro (bone conduction headset)
+- ✅ Any Bluetooth headset supporting both A2DP and HSP/HFP profiles
+
+**NOT Supported:**
+- BLE-only devices without A2DP audio profile
+- Fitness trackers with Bluetooth alerts only
+
+### Bluetooth Setup (Raspberry Pi 3/4)
+```bash
+# Install Bluetooth audio support
+sudo apt-get install -y pulseaudio pulseaudio-module-bluetooth bluez-tools
+
+# Start PulseAudio
+pulseaudio --start
+
+# Pair headset
+bluetoothctl
+> power on
+> agent on
+> scan on
+# Wait for device to appear
+> pair XX:XX:XX:XX:XX:XX
+> trust XX:XX:XX:XX:XX:XX
+> connect XX:XX:XX:XX:XX:XX
+
+# Switch to headset profile (enables microphone)
+pactl set-card-profile bluez_card.XX_XX_XX_XX_XX_XX handsfree_head_unit
+
+# Verify devices
+pactl list sources short  # Should show Bluetooth mic
+pactl list sinks short    # Should show Bluetooth speaker
+```
+
+### Known Issues
+
+**Raspberry Pi 3/Zero 2W Bluetooth Audio:**
+- PyAudio + PulseAudio + Bluetooth can be unreliable on Pi 3/Zero 2W
+- Recommend Raspberry Pi 4 or newer for better Bluetooth audio stack
+- Alternative: Use USB microphone + Bluetooth speakers
+- Or use text interface (fully functional, no audio issues)
+
+**Workaround for Pi 3:**
+Text mode provides 100% reliable operation:
+```bash
+python cdss_final.py
+```
 ## 📦 Installation
 
 ### 1. Clone Repository
