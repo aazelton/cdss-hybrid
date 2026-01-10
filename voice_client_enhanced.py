@@ -23,7 +23,7 @@ import subprocess
 load_dotenv()
 
 # Configuration
-CLOUD_API_URL = os.getenv("CLOUD_API_URL", "http://35.202.102.233:8000")
+CLOUD_API_URL = os.getenv("CLOUD_API_URL", "http://xxxxxxx")
 DEVICE_ID = os.getenv("DEVICE_ID", "pi-zero-2w-001")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
