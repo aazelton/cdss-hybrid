@@ -514,7 +514,7 @@ We welcome contributions! Please ensure your code follows the project's style an
 
 ## Contact
 
-**Creator:** Andrew Zelton  
+**Creator:** Andrew Azelton  azelton@proton.me
 **GitHub:** [@aazelton](https://github.com/aazelton)  
 **Project:** https://github.com/aazelton/cdss-hybrid
 
